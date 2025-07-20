@@ -1,5 +1,5 @@
 
-public class Class1 {
+public class FirstClass {
 	
 	public static void main(String argsp[]) {
 		// Printing text
