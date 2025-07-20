@@ -13,6 +13,7 @@ public class SecondClass {
 		System.out.println("The cube of 3 is: " + (3 * 3 * 3));
 		System.out.println("The square root of 16 is: " + Math.sqrt(16));
 		System.out.println("The absolute value of -5 is: " + Math.abs(-5));
+		
 	}
 
 }
