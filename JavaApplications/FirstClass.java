@@ -85,5 +85,21 @@ public class FirstClass {
 			System.out.println("Value of y in do-while: " + y);
 			y++;
 		} while (y < 10);
+
+
+		int num[] = {1, 2, 3, 4, 5};
+		System.out.println("Array elements are:");
+		for (int c1 = 0; c1 < num.length; c1++) {
+			System.out.println(num[c1]);
+		}
+
+		int num3[] = new int[5];
+		for (int c1 = 0; c1 < num3.length; c1++) {
+			num3[c1] = c1 + 1;
+		}
+		System.out.println("Array elements are:");
+		for (int c1 = 0; c1 < num3.length; c1++) {
+			System.out.println(num3[c1]);
+		}
 	}
 }
