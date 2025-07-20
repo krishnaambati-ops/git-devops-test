@@ -11,6 +11,9 @@ class Calculator {
         return a * b;
     }
 
+}
+
+class Division1 {
     public double divide(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Division by zero is not allowed.");
@@ -20,7 +23,7 @@ class Calculator {
 }
 
 public class Demo1 {
-	public static void main(String[] args) {
+	public static void main(String a[]) {
 		Calculator calc = new Calculator();
 		int sum = calc.add(5, 10);
 		System.out.println("The sum is: " + sum);
@@ -28,7 +31,8 @@ public class Demo1 {
 		System.out.println("The difference is: " + difference);
         int product = calc.multiply(5, 10);
         System.out.println("The product is: " + product);
-        double quotient = calc.divide(10, 5);
+        Division1 calc2 = new Division1();
+        double quotient = calc2.divide(10, 5);
         System.out.println("The quotient is: " + quotient); 
 	}
 }
