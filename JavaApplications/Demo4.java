@@ -1,16 +1,20 @@
 class Mobile {
+
     static String name;
+    static {
+        name = "Mobile";
+        System.out.println("Static Block: Initializing Mobile class");
+    }
     
-
-
     public String getName() {
         return name;
     }
 }
 
 public class Demo4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
 
+        Class.forName("Mobile");
         Mobile.name = "Nokia";
 
         System.out.println("Static Mobile Name: " + Mobile.name);  
