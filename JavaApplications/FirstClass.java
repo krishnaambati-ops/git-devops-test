@@ -86,7 +86,6 @@ public class FirstClass {
 			y++;
 		} while (y < 10);
 
-
 		int num[] = {1, 2, 3, 4, 5};
 		System.out.println("Array elements are:");
 		for (int c1 = 0; c1 < num.length; c1++) {
@@ -101,5 +100,36 @@ public class FirstClass {
 		for (int c1 = 0; c1 < num3.length; c1++) {
 			System.out.println(num3[c1]);
 		}
+
+		int num2[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+		System.out.println("2D Array elements are:");
+
+		for (int i1 = 0; i1 < num2.length; i1++) {
+			for (int j1 = 0; j1 < num2[i1].length; j1++) {
+				num2[i1][j1] = (int)(Math.random()*10) + 1; // Random numbers between 1 and 10
+			}
+			
+		}
+
+		for (int i1 = 0; i1 < num2.length; i1++) {
+			for (int j1 = 0; j1 < num2[i1].length; j1++) {
+				System.out.print(num2[i1][j1] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("Array elements are:");
+
+		int num4[][] = new int[3][];
+		num4[0] = new int[5];
+		num4[1] = new int[4];
+		num4[2] = new int[3];
+		for (int i1 = 0; i1 < num4.length; i1++) {
+			for (int j1 = 0; j1 < num4[i1].length; j1++) {
+				num4[i1][j1] = (int)(Math.random()*10) + 1; // Random numbers between 1 and 10
+				System.out.print(num4[i1][j1] + " ");
+			}
+			System.out.println();
+		}
+
 	}
 }
